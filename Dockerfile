@@ -59,6 +59,11 @@ RUN openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 \
 
 
 EXPOSE 8888
+EXPOSE 3000
+EXPOSE 4000
+EXPOSE 5000
+EXPOSE 7357
+EXPOSE 8080
 
 # fireup the jupyter server when the container starts
 CMD $HOME/run-server.sh
